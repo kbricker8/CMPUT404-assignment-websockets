@@ -122,7 +122,7 @@ def subscribe_socket(ws):
     except Exception as e:
         print(f"WS ERROR {e}")
     finally:
-        client.remove(client)
+        clients.remove(client)
         gevent.kill(g)
 
 
